@@ -131,6 +131,31 @@ const attendance = [
   { subject: "CS424", date: "2026-08-01", period: "P2", status: "P" },
   { subject: "CS424", date: "2026-08-08", period: "P1", status: "P" },
   { subject: "CS424", date: "2026-08-08", period: "P2", status: "P" },
+  { subject: "CS424", date: "2026-07-25", period: "P1", status: "A" },
+    { subject: "CS424", date: "2026-07-25", period: "P2", status: "A" },
+    { subject: "CS424", date: "2026-08-01", period: "P1", status: "P" },
+    { subject: "CS424", date: "2026-08-01", period: "P2", status: "P" },
+    { subject: "CS424", date: "2026-08-08", period: "P1", status: "P" },
+    { subject: "CS424", date: "2026-08-08", period: "P2", status: "P" },
+
+
+    // CS418 — Data Warehousing & Data Mining
+{ subject: "CS418", date: "2026-07-17", period: "P1", status: "P" },
+{ subject: "CS418", date: "2026-07-17", period: "P2", status: "P" },
+{ subject: "CS418", date: "2026-07-20", period: "P3", status: "P" },
+{ subject: "CS418", date: "2026-07-23", period: "P4", status: "P" },
+{ subject: "CS418", date: "2026-07-24", period: "P1", status: "P" },
+{ subject: "CS418", date: "2026-07-24", period: "P2", status: "P" },
+{ subject: "CS418", date: "2026-07-27", period: "P3", status: "A" },
+{ subject: "CS418", date: "2026-07-30", period: "P4", status: "A" },
+{ subject: "CS418", date: "2026-07-31", period: "P1", status: "P" },
+{ subject: "CS418", date: "2026-07-31", period: "P2", status: "P" },
+{ subject: "CS418", date: "2026-08-03", period: "P3", status: "P" },
+{ subject: "CS418", date: "2026-08-06", period: "P4", status: "A" },
+{ subject: "CS418", date: "2026-08-07", period: "P1", status: "P" },
+{ subject: "CS418", date: "2026-08-10", period: "P3", status: "P" },
+{ subject: "CS418", date: "2026-08-14", period: "P1", status: "P" },
+{ subject: "CS418", date: "2026-08-14", period: "P2", status: "A" },
 
   // CS415 — Fuzzy Logic & Neural Networks
   { subject: "CS415", date: "2026-07-21", period: "P3", status: "P" },
@@ -142,6 +167,25 @@ const attendance = [
   { subject: "CS415", date: "2026-08-13", period: "P3", status: "P" },
   { subject: "CS415", date: "2026-08-14", period: "P6", status: "P" },
   { subject: "CS415", date: "2026-08-21", period: "P6", status: "A" },
+
+  // CS417 — Mobile Computing
+{ subject: "CS417", date: "2026-07-21", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-07-22", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-07-23", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-07-24", period: "P6", status: "P" },
+{ subject: "CS417", date: "2026-07-28", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-07-29", period: "P6", status: "P" },
+{ subject: "CS417", date: "2026-07-30", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-08-05", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-08-06", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-08-07", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-08-11", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-08-12", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-08-13", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-08-14", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-08-18", period: "P3", status: "A" },
+{ subject: "CS417", date: "2026-08-19", period: "P6", status: "A" },
+{ subject: "CS417", date: "2026-08-20", period: "P3", status: "A" },
 
   // CS412 — Cryptography and Network Security
   { subject: "CS412", date: "2026-07-22", period: "P1", status: "P" },
