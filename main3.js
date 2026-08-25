@@ -89,8 +89,81 @@ const holidays = [
 // ATTENDANCE CSV
 // =====================================================
 
-const attendanceFile = "attendance_uploaded.csv";
+const attendance = [
+  // CS426 — Competitive Coding
+  { subject: "CS426", date: "2026-07-14", period: "P5", status: "A" },
+  { subject: "CS426", date: "2026-07-14", period: "P6", status: "A" },
+  { subject: "CS426", date: "2026-07-21", period: "P5", status: "A" },
+  { subject: "CS426", date: "2026-07-21", period: "P6", status: "A" },
+  { subject: "CS426", date: "2026-07-28", period: "P5", status: "A" },
+  { subject: "CS426", date: "2026-07-28", period: "P6", status: "A" },
 
+  // CS425 — Introduction to Machine Learning
+  { subject: "CS425", date: "2026-07-13", period: "P6", status: "A" },
+  { subject: "CS425", date: "2026-07-15", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-07-17", period: "P4", status: "A" },
+  { subject: "CS425", date: "2026-07-20", period: "P6", status: "A" },
+  { subject: "CS425", date: "2026-07-21", period: "P1", status: "P" },
+  { subject: "CS425", date: "2026-07-22", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-07-24", period: "P4", status: "A" },
+  { subject: "CS425", date: "2026-07-27", period: "P6", status: "P" },
+  { subject: "CS425", date: "2026-07-28", period: "P1", status: "A" },
+  { subject: "CS425", date: "2026-07-29", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-08-03", period: "P6", status: "A" },
+  { subject: "CS425", date: "2026-08-05", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-08-07", period: "P4", status: "P" },
+  { subject: "CS425", date: "2026-08-10", period: "P6", status: "P" },
+  { subject: "CS425", date: "2026-08-11", period: "P1", status: "A" },
+  { subject: "CS425", date: "2026-08-12", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-08-14", period: "P3", status: "P" },
+  { subject: "CS425", date: "2026-08-17", period: "P6", status: "A" },
+  { subject: "CS425", date: "2026-08-18", period: "P1", status: "A" },
+  { subject: "CS425", date: "2026-08-19", period: "P3", status: "P" },
+
+  // CG401 — Career Development Course
+  { subject: "CG401", date: "2026-07-20", period: "P8", status: "A" },
+  { subject: "CG401", date: "2026-07-27", period: "P8", status: "A" },
+
+  // CS424 — SciLab
+  { subject: "CS424", date: "2026-07-25", period: "P1", status: "A" },
+  { subject: "CS424", date: "2026-07-25", period: "P2", status: "A" },
+  { subject: "CS424", date: "2026-08-01", period: "P1", status: "P" },
+  { subject: "CS424", date: "2026-08-01", period: "P2", status: "P" },
+  { subject: "CS424", date: "2026-08-08", period: "P1", status: "P" },
+  { subject: "CS424", date: "2026-08-08", period: "P2", status: "P" },
+
+  // CS415 — Fuzzy Logic & Neural Networks
+  { subject: "CS415", date: "2026-07-21", period: "P3", status: "P" },
+  { subject: "CS415", date: "2026-07-22", period: "P6", status: "P" },
+  { subject: "CS415", date: "2026-07-23", period: "P3", status: "P" },
+  { subject: "CS415", date: "2026-07-28", period: "P3", status: "P" },
+  { subject: "CS415", date: "2026-08-05", period: "P6", status: "P" },
+  { subject: "CS415", date: "2026-08-12", period: "P3", status: "P" },
+  { subject: "CS415", date: "2026-08-13", period: "P3", status: "P" },
+  { subject: "CS415", date: "2026-08-14", period: "P6", status: "P" },
+  { subject: "CS415", date: "2026-08-21", period: "P6", status: "A" },
+
+  // CS412 — Cryptography and Network Security
+  { subject: "CS412", date: "2026-07-22", period: "P1", status: "P" },
+  { subject: "CS412", date: "2026-07-23", period: "P1", status: "P" },
+  { subject: "CS412", date: "2026-07-23", period: "P8", status: "P" },
+
+  // CS410 — Distributed Systems
+  { subject: "CS410", date: "2026-07-21", period: "P7", status: "A" },
+  { subject: "CS410", date: "2026-07-22", period: "P4", status: "P" },
+  { subject: "CS410", date: "2026-07-24", period: "P3", status: "P" },
+  { subject: "CS410", date: "2026-07-28", period: "P7", status: "P" },
+  { subject: "CS410", date: "2026-07-29", period: "P4", status: "A" },
+  { subject: "CS410", date: "2026-07-30", period: "P2", status: "A" },
+  { subject: "CS410", date: "2026-08-05", period: "P4", status: "P" },
+  { subject: "CS410", date: "2026-08-06", period: "P2", status: "P" },
+  { subject: "CS410", date: "2026-08-07", period: "P3", status: "A" },
+  { subject: "CS410", date: "2026-08-11", period: "P7", status: "P" },
+  { subject: "CS410", date: "2026-08-13", period: "P2", status: "A" },
+  { subject: "CS410", date: "2026-08-14", period: "P3", status: "P" },
+  { subject: "CS410", date: "2026-08-18", period: "P7", status: "P" },
+  { subject: "CS410", date: "2026-08-19", period: "P4", status: "P" }
+];
 
 // =====================================================
 // DATE INFORMATION
@@ -317,80 +390,21 @@ function parseCSVLine(line) {
 
 function readAttendance() {
 
-    if (!fs.existsSync(attendanceFile)) {
-
-        console.error(
-            `ERROR: ${attendanceFile} not found.`
-        );
-
-        process.exit(1);
-    }
-
-
-    const content =
-        fs.readFileSync(
-            attendanceFile,
-            "utf8"
-        );
-
-
-    const lines =
-        content
-            .split(/\r?\n/)
-            .filter(line => line.trim() !== "");
-
-
     const uploaded = {};
 
+    for (const entry of attendance) {
 
-    // Skip header
-    for (let i = 1; i < lines.length; i++) {
-
-        const columns =
-            parseCSVLine(lines[i]);
-
-
-        const subject =
-            columns[0]?.trim();
-
-
-        if (!subject) {
-            continue;
+        if (!uploaded[entry.subject]) {
+            uploaded[entry.subject] = [];
         }
 
-
-        uploaded[subject] = [];
-
-
-        for (
-            let j = 1;
-            j < columns.length;
-            j++
-        ) {
-
-            const date =
-                columns[j]?.trim();
-
-
-            if (!date) {
-                continue;
-            }
-
-
-            const isoDate =
-                displayDateToISO(date);
-
-
-            if (isoDate) {
-
-                uploaded[subject].push({
-                    date: date,
-                    isoDate: isoDate
-                });
-            }
-        }
+        uploaded[entry.subject].push({
+            date: entry.date,
+            isoDate: entry.date,
+            period: entry.period,
+            status: entry.status
+        });
     }
-
 
     return uploaded;
 }
